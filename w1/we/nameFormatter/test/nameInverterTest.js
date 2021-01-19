@@ -9,7 +9,7 @@ describe('nameInverter', function() {
     const expectedOutput = "";
     assert.equal(nameInverter(inputName), expectedOutput);
   });
-  it('should return a single name when passed a single name', function() {
+  it('should return a single name when passed a single name with extra spaces', function() {
     const inputName = "name";
     const expectedOutput = "name";
     assert.equal(nameInverter(inputName), expectedOutput);
@@ -19,7 +19,7 @@ describe('nameInverter', function() {
     const expectedOutput = "name";
     assert.equal(nameInverter(inputName), expectedOutput);
   });
-  it('should return a single name when passed a single name', function() {
+  it('should return a last-name, first-name when passed a first and last-name ', function() {
     const inputName = "first name";
     const expectedOutput = "name, first";
     assert.equal(nameInverter(inputName), expectedOutput);
